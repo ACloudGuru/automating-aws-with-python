@@ -1,3 +1,5 @@
+config.dev.json
+
 *.pem
 
 # Byte-compiled / optimized / DLL files
