@@ -19,7 +19,7 @@ class DistributionManager:
         for page in paginator.paginate():
             print(page)
             for dist in page['DistributionList'].get('Items', []):
-                for alias in dist['Aliases']['Items']:
+                for alias in dist['Aliases'].get('Items', []):
                     if alias == domain_name:
                         return dist
 
